@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html ng-app="platz">
+<head>
+	<title>Platz - Suas Rotas, Seus Eventos</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css" media="all"/>
+	<script type="text/javascript" src="lib/jquery/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	 <script src="lib/ie-emulation-modes-warning.js"></script>
+	<!-- <script src="js/main.js"></script> --> 
+	<script src="js/funcionalidades-angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+
+	<link rel="icon" href="logo1.png"> 
+</head>
+<body>
+	<ng-include src="'view/nav.html'"></ng-include>
+
+	<div class="espaco"></div>
+	<div class="jumbotron corpo-sobre">
+		<div class="container">
+			<h1>PLATZ - Suas Rotas, Seus Eventos</h1>
+			<p>Projeto Voltado a Necessidade de Rotas seguras a eventos,
+				Aqui você consegue encontrar os eventos mais badalados pode
+				avaliar e dar sua nota, alem muitas outras coisas</p>
+				<p><button type="button" class="btn btn-primary btn-lg btn-contato" data-toggle="modal" data-target="#myModal">
+						Entrar em Contato
+					</button></p>
+			</div>
+		</div>
+		<div class="container marketing">
+			<div class="row">
+
+				<div class="col-lg-6">
+
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Envie um email para o Platz</h4>
+								</div>
+								<div class="modal-body">
+									
+									<div class="container">
+										<form>
+											<div class="form-group row">
+												<label for="inputNome3" class="col-sm-2 col-form-label">Nome</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control input-contato" id="inputNome3" placeholder="Ex: Maria" required="inputNome3" maxlength="50" >
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+												<div class="col-sm-10">
+													<input type="email" class="form-control input-contato" id="inputEmail3" placeholder="Ex: Maria" required="inputEmail3" maxlength="50" >
+												</div>
+											</div>
+											<div class="form-group row">
+												<label for="inputAssunto3" class="col-sm-2 col-form-label">Selecione Um Assunto</label>
+												<div class="col-sm-10">
+													<select class="form-control input-contato">
+														<option> -- Selecione um Assunto --</option>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label for="inputMensagem3" class="col-sm-2 col-form-label">Mensagem</label>
+												<div class="col-sm-10">
+													
+													<textarea id="mensagem" class="form-control input-contato" rows="5" required="mensagem" maxlength="500"  ></textarea>
+												</div>
+											</div>
+
+
+
+										</form>
+									</div>
+
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+									<button type="button" class="btn btn-primary">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div> <!-- fim da div modal -->
+
+				</div> <!-- fim da div que coloca colunas -->
+			</div> <!-- fim da div row -->
+
+			<div class="row">
+				<div class="sobre-criadores">
+					<div class="col-md-3">
+						<img class="img-circle" src="img/sobreAndy.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Anderson Pessoa</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					</div>
+					<div class="col-md-3">
+						<img class="img-circle" src="img/sobreGabs.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Gabriela Nunes</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					</div>
+					<div class="col-md-3">
+						<img class="img-circle" src="img/sobreChris.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Christian Xavier</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					</div>
+					<div class="col-md-3">
+						<img class="img-circle" src="img/sobreJuh.png" alt="Generic placeholder image" width="140" height="140">
+						<h2>Juliana Cerqueira</h2>
+						<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+					</div>
+
+				</div><!-- fim da div sobre-criadores -->
+
+			</div> <!-- fim da div row -->
+
+		</div><!-- fim da div container -->
+
+		<div class="footer-sobre">
+		<ng-include src="'view/footer.html'"></ng-include>
+		</div>
+
+		<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Clique no botão para voltar ao topo da pagina" data-toggle="tooltip" data-placement="left">Voltar ao topo</a>
+
+		<script type="text/javascript">
+		angular.module("platz",[]);
+		</script>
+	</body>
+	</html>

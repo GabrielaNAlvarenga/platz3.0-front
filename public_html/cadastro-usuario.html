@@ -1,0 +1,170 @@
+<html ng-app="platz">
+<head>
+	<title>Platz - Sua Rota , Seus Eventos</title>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<link href="lib/bootstrap.min.css" rel="stylesheet">
+	 <link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	 <script src="lib/ie-emulation-modes-warning.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="logo1.png">
+	<!-- <script src="js/main.js"></script> --> 
+	<script src="js/funcionalidades-angular.js"></script>
+	<script src="js/validacoes.js"></script>
+
+</head>
+<body>
+
+	<ng-include src="'view/nav.html'"></ng-include>
+	<div class="cad-usuario">
+			<div class="espaco"></div>
+		<form id="form-cad-usuario">
+
+			<div class="container">
+				<h1>Cadastro de Usuario</h1>
+				<div class="well well-cadastro">Informações da Conta</div>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6 ">
+
+					<div class="form-group">
+						<label for="imagem-usuario" >Imagem de Perfil</label>
+						<input id="imagem-usuario" type="file" class="file form-control">
+					</div>
+
+					<div class="form-group">
+						<label for="senha-usuario">Senha</label>
+						<input class="form-control" type="password" id="senha-usuario" required="senha-usuario" maxlenght="30">
+					</div>
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="email-usuario">Email</label>
+						<input class="form-control" type="email" placeholder="Ex: nome@example.com" id="email-usuario" required="email-usuario" maxlenght="50">
+					</div>
+				
+					<div class="form-group">
+						<label for="confirma-senha-usuario">Confirme sua senha</label>						
+						<input class="form-control" type="password"  id="confirma-senha-usuario" required="confirma-senha-usuario" maxlength="30" oninput="validaSenhaUsuario(this)">						
+					</div>
+
+				</div><!-- fim da div col -->
+
+			</div> <!-- fim da div que tem as duas colunas dentro -->
+
+			<div class="col-md-12">
+				<div class="container">
+					<div class="well well-cadastro">Informações Pessoais</div>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="cpf-usuario" >CPF</label>						
+						<input id="cpf-usuario" type="text" class="form-control" name='cpfcnpj' onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' maxlength="14" placeholder="999.999.999-99">
+					</div>
+
+					<div class="form-group ">
+						<label for="data-nacimento-usuario">Data de Nascimento</label>						
+						<input class="form-control" type="date" id="data-nacimento-usuario" required="data-nacimento-usuario" maxlenght="30">						
+					</div>
+
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group ">
+						<label for="nome-usuario">Nome Completo</label>						
+						<input class="form-control" type="text" id="nome-usuario" required="nome-usuario" maxlenght="30">						
+					</div>
+
+					<div class="form-group">
+						<label for="telefone-usuario">Telefone</label>						
+						<input class="form-control" type="text"  id="telefone-usuario" required="telefone-usuario" maxlenght="30">
+						
+					</div>
+					
+				</div><!-- fim da div col -->
+
+			</div> <!-- fim da div que tem as duas colunas dentro -->
+
+
+			<div class="col-md-12">
+				<div class="container">
+					<div class="well well-cadastro">Endereço</div>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="cep-empresa" >CEP</label>						
+						<input id="cep-empresa" type="text" class="form-control" >						
+					</div>
+
+					<div class="form-group">
+						<label for="rua-empresa">Rua</label>						
+						<input class="form-control" type="text"  id="rua-empresa" required="rua-empresa" maxlenght="30">						
+					</div>
+
+					<div class="form-group">
+						<label for="complemento-empresa">Complemento</label>						
+						<input class="form-control" type="text"  id="complemento-empresa" maxlenght="30">			
+					</div>
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="numero-empresa">Numero</label>
+						<input class="form-control" type="text" id="numero-empresa" required="numero-empresa" maxlenght="50">						
+					</div>
+
+					<div class="form-group">
+						<label for="bairro-empresa">Bairro</label>						
+						<input class="form-control" type="text"  id="bairro-empresa" required="bairro-empresa" maxlenght="30">						
+					</div>
+
+					<div class="form-group">
+						<label for="cidade-empresa" >Cidade</label>						
+						<input class="form-control" type="text"  id="cidade-empresa" required="cidade-empresa" maxlenght="30">						
+					</div>
+					
+				</div><!-- fim da div col -->
+
+				<div class="botoes-cad">
+				<p><button class="btn btn-lg btn-warning " type="submit">Cadastrar</button>
+					<button class="btn btn-lg btn-primary " type="submit">Cancelar</button>
+					</div>
+				</div> <!-- fim da div que tem as duas colunas dentro -->
+
+
+
+			</form><!-- fim do form -->
+
+		</div><!-- fim div cad-empresa -->
+		
+		<div class="footer-cad">
+		<ng-include src="'view/footer.html'"></ng-include>
+		</div>	
+	
+
+
+		<script type="text/javascript">
+		angular.module("platz",[]);
+		</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		 <script src="lib/bootstrap.min.js"></script>
+
+	</body>
+	</html>

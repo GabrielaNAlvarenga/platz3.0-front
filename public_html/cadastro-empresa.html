@@ -1,0 +1,179 @@
+<html ng-app="platz">
+<head>
+	<title>Platz - Sua Rota , Seus Eventos</title> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<link href="lib/bootstrap.min.css" rel="stylesheet">
+	 <link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	 <script src="lib/ie-emulation-modes-warning.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="logo1.png">
+	<!-- <script src="js/main.js"></script> --> 
+	<script src="js/funcionalidades-angular.js"></script>
+	<script src="js/validacoes.js"></script>
+
+
+</head>
+<body>
+
+	<ng-include src="'view/nav.html'"></ng-include>
+	<div class="cad-empresa">
+			<div class="espaco"></div>
+		<form id="form-cad-empresa">
+
+			<div class="container">
+				<h1>Cadastro de Empresa</h1>
+				<div class="well well-cadastro">Informações da Conta</div>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6 ">
+
+					<div class="form-group">
+						<label for="imagem-empresa" >Imagem de Perfil</label>
+						<input id="imagem-empresa" type="file" class="file form-control">
+					</div>
+
+					<div class="form-group">
+						<label for="senha-empresa">Senha</label>
+						<input class="form-control" type="password" id="senha-empresa" required="senha-empresa" maxlenght="30">
+					</div>
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="email-empresa">Email</label>
+						<input class="form-control" type="email" placeholder="Ex: nome@example.com" id="email-empresa" required="email-empresa" maxlenght="50">
+					</div>
+				
+					<div class="form-group">
+						<label for="confirma-senha-empresa">Confirme sua senha</label>						
+						<input class="form-control" type="password"  id="confirma-senha-empresa" required="confirma-senha-empresa" maxlength="30" oninput="validaSenhaEmpresa(this)">						
+					</div>
+
+				</div><!-- fim da div col -->
+
+			</div> <!-- fim da div que tem as duas colunas dentro -->
+
+			<div class="col-md-12">
+				<div class="container">
+					<div class="well well-cadastro">Informações Empresariais</div>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="cnpj-empresa" >CNPJ</label>						
+						<input id="cnpj-empresa" type="text" class="form-control" name='cpfcnpj' onkeypress='mascaraMutuario(this,cpfCnpj)' onblur='clearTimeout()' maxlength="18" placeholder="99.999.999/9999-99">
+					</div>
+
+					<div class="form-group ">
+						<label for="nome-fantasia-empresa">Nome Fantasia</label>						
+						<input class="form-control" type="text" id="nome-fantasia-empresa" required="nome-fantasia-empresa" maxlenght="30">
+						
+					</div>
+
+					<div class="form-group">
+						<label for="telefone2-empresa" >Telefone 2</label>						
+						<input class="form-control" type="text"  id="telefone2-empresa" maxlength="30">
+						
+					</div>
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="razao-social-empresa">Razão Social</label>						
+						<input class="form-control" type="text" id="razao-social-empresa" required="razao-social-empresa" maxlenght="50">						
+					</div>
+
+					<div class="form-group">
+						<label for="telefone-empresa">Telefone</label>						
+						<input class="form-control" type="text"  id="telefone-empresa" required="telefone-empresa" maxlenght="30">
+						
+					</div>
+					
+				</div><!-- fim da div col -->
+
+			</div> <!-- fim da div que tem as duas colunas dentro -->
+
+
+			<div class="col-md-12">
+				<div class="container">
+					<div class="well well-cadastro">Endereço</div>
+				</div>
+			</div>
+
+			<div class="col-md-2"></div>
+			<div class="col-md-8 corpo-form">
+				<div class="col-md-6">
+
+					<div class="form-group">
+						<label for="cep-empresa" >CEP</label>						
+						<input id="cep-empresa" type="text" class="form-control">						
+					</div>
+
+					<div class="form-group">
+						<label for="rua-empresa">Rua</label>						
+						<input class="form-control" type="text"  id="rua-empresa" required="rua-empresa" maxlenght="30">						
+					</div>
+
+					<div class="form-group">
+						<label for="complemento-empresa">Complemento</label>						
+						<input class="form-control" type="text"  id="complemento-empresa" maxlenght="30">			
+					</div>
+				</div><!-- fim da div col -->
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="numero-empresa">Numero</label>
+						<input class="form-control" type="text" id="numero-empresa" required="numero-empresa" maxlenght="50">						
+					</div>
+
+					<div class="form-group">
+						<label for="bairro-empresa">Bairro</label>						
+						<input class="form-control" type="text"  id="bairro-empresa" required="bairro-empresa" maxlenght="30">						
+					</div>
+
+					<div class="form-group">
+						<label for="cidade-empresa" >Cidade</label>						
+						<input class="form-control" type="text"  id="cidade-empresa" required="cidade-empresa" maxlenght="30">						
+					</div>
+					
+				</div><!-- fim da div col -->
+
+				<div class="botoes-cad">
+					
+				<p><button class="btn btn-lg btn-warning " type="submit">Cadastrar</button>
+					<button class="btn btn-lg btn-primary " type="submit">Cancelar</button>
+					</div>
+				</div> <!-- fim da div que tem as duas colunas dentro -->
+
+
+
+
+			</form><!-- fim do form -->
+
+		</div><!-- fim div cad-empresa -->
+
+		<div class="footer-cad">
+		<ng-include src="'view/footer.html'"></ng-include>
+		</div>	
+	
+
+
+		<script type="text/javascript">
+		angular.module("platz",[]);
+		</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		 <script src="lib/bootstrap.min.js"></script>
+
+	</body>
+	</html>

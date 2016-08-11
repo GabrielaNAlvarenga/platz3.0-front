@@ -1,0 +1,62 @@
+<html ng-app="platz">
+<head>
+	<title>Platz - Suas Rotas, Seus Eventos</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.css" media="all"/>
+	<script type="text/javascript" src="lib/jquery/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.js"></script>
+	<link href="lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	 <script src="lib/ie-emulation-modes-warning.js"></script>
+	<!-- <script src="js/main.js"></script> --> 
+	<script src="js/funcionalidades-angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<script type="text/javascript" src="js/modal-automatica.js"></script>
+
+	<link rel="icon" href="logo1.png"> 
+</head>
+<body>
+
+	<ng-include src="'view/nav.html'"></ng-include>
+	<div class="modal-auto">
+		<div class="modal fade" id="meumodal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Cadastro Platz</h4>
+					</div>
+
+					<div class="modal-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+						</div>
+						<div class="modal-auto-botoes">
+							<div class="modal-footer">
+								<p><a class="btn btn-primary " href="cadastro-usuario.html" role="button">Cadastrar como Usuario</a> 
+									<a class="btn  btn-warning " href="cadastro-empresa.html" role="button">Cadastrar como Empresa</a></p>
+							</div>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</div>
+		
+		
+
+		<div class="footer-evento-especifico"> 
+			<ng-include src="'view/footer.html'"></ng-include>
+		</div>
+
+
+
+		<script type="text/javascript">
+		angular.module("platz",[]);
+		</script>
+
+	</body>
+	</html>

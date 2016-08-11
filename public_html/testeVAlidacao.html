@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Cadastro com HTML5 e JavaScript - Verificação de campos iguais</title>
+    </head>
+    <body>
+        <!-- Área -->
+        <header><h3>Tutorial - Blog Lidy Monteiro</h3></header>
+        <!--Painel de Cadastro -->
+        <section class="cadastro">
+            <article class="cadastro_area">
+                <header>
+                    <h2 class="descricao">Verificação de campos iguais com HTML5 e Javascript</h2>
+                </header>
+                <form id="formCadastro" name="formulario" action="" method="POST">
+                    <label for="txtSenha">Senha</label>
+                    <input id="txtSenha" name="senha" type="password" required placeholder="Digite uma Senha" title="Senha" />
+                    <label for="repetir_senha">Confirmar Senha</label>
+                    <input id="repetir_senha" name="repetir_senha" type="password" required  placeholder="Repetir Senha" title="Repetir Senha" oninput="validaSenha(this)" />
+                    <button type="submit" class="testar">Testar</button>
+                </form>
+            </article>
+        </section>
+    </body>
+
+    <script type="text/javascript">
+function validaSenha (input){ 
+    if (input.value != document.getElementById('txtSenha').value) {
+    input.setCustomValidity('Repita a senha corretamente');
+  } else {
+    input.setCustomValidity('');
+  }
+} 
+
+function validarSenha(form){ 
+    senha = document.formulario.senha.value
+    senhaRepetida = document.formulario.repetir_senha.value
+    if (senha != senhaRepetida){
+        alert("Repita a senha corretamente");
+        document.formulario.repetir_senha.focus();  
+        return false;
+    }
+}
+    </script>
+</html>

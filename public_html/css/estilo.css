@@ -1,0 +1,423 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+html , body
+{
+	height: 100%;
+	background: #ecf0f1;
+}
+/*css da nav das paginas inciais*/
+
+/*css da logo*/
+.navbar
+{
+	margin-bottom: 0px;
+	position: fixed;
+	width: 100%;
+	z-index: 2000;
+}
+.nav-inicial .navbar-brand{ 
+	background: url(../img/logo1.png) center / contain no-repeat;
+	width: 200px;
+	height: 80px;
+}
+
+/*fim do css logo*/
+
+/*css dos links da nav*/
+
+.nav-inicial .nav >li >a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fff;
+	font-size: 15px;
+}
+.nav-inicial .nav >li >.link
+{
+	margin-top: 15px;
+}
+
+
+.nav-inicial .nav > .link-login , .nav-inicial .nav > .link-cadastro
+{
+	margin-right: 10px;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+.nav-inicial .nav > .link-login
+{
+	background: #e67e22;
+}
+.nav-inicial .nav > .link-cadastro
+{
+	background: #1abc9c;
+}
+
+
+.nav-inicial .navbar-toggle {
+	padding: 10px;
+	margin: 25px 15px 25px 0;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+}
+.navbar-nav>li>.dropdown-menu label{
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.navbar-nav>li>.dropdown-menu button{
+  margin-top: 10px;
+}
+/*fim do css da nav*/
+
+
+
+.carousel {
+	height: 500px;
+	margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+	z-index: 10;
+}
+.carousel-index
+{
+	background: rgba(105 ,105, 105,0.4);
+	border-radius: 15px;
+	color: white;
+	margin-bottom: 60px;
+}
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+	height: 500px;
+	background-color: #777;
+}
+.carousel-inner > .item > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 500px;
+}
+
+
+
+/* eventos em destaque abaixo do slider */
+.marketing .col-lg-4 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.marketing h2 {
+	font-weight: normal;
+}
+.marketing .col-lg-4 p {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.imagem-destaque
+{
+	width: 240px;
+	height: 240px;
+	min-height: 240px;
+	min-width: 240px;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+/*fim da estilização dos eventos abaixo do slider*/
+
+/*inicio da estilização do mapa do index*/
+#map_canvas
+{
+	width: 85%;
+ 	height: 500px;
+ 	margin: 0 auto;
+ }
+ .mapa 
+ {
+ 	margin-top: 5%;
+ 	margin-bottom: 5%;
+ }
+
+ .mapa-evento-especifico
+ {
+	margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+ }
+
+ /*fim da estilização do mapa*/
+
+ /*estilização do footer*/
+ .footer
+ {
+ 	background: #222;
+ 	color: white;
+ 	padding-top: 10px;
+ }
+ .footer a
+ {
+ 	color: #87CEFF;
+ }
+
+.footer-login , .footer-sobre , .footer-evento-especifico
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 2000;
+}
+.footer-cad
+{
+	margin-top: 55%;
+}
+/*fim da estilização do footer*/
+
+/*botao de voltar ao topo*/
+ .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    display:none;
+    font-size: 15px;
+}
+/*fim do btn voltar ao topo*/
+
+/*jumbotron da pagina sobre*/
+.espaco
+{
+	width: 100%;
+	height: 10%;
+}
+.corpo-sobre
+{
+	width: 85%;
+	border-radius: 10px;
+	margin: 0 auto;
+	
+}
+/*fim do jumbotron*/
+
+/*sobre os autores do platz*/
+.sobre-criadores img
+{
+    margin-left: 50px;
+
+}
+.col-md-3
+{
+	margin-bottom: 5%;
+}
+.btn-contato
+{
+	margin-left: 45%;
+	margin-bottom: 5%;
+	margin-top: 2%;
+}
+.input-contato
+{
+	width: 35%;
+}
+#myModal
+{
+	z-index: 2500;
+}
+/*fim  do sobre os autores*/
+
+/*pagina de login*/
+.corpo-login  
+{
+	background:url(../img/plano-fundo-login.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+	z-index: 10;
+}
+.caixa-login
+{
+	top:30%;
+	left:20%;
+	position: absolute;
+	z-index: 1000;
+	opacity: 1;
+}
+.form-login
+{
+	z-index: 100;
+	background: white;
+	padding: 60px 60px;
+	width: 35%;
+	height: 10%;
+	margin: 0 auto;
+	border-radius: 15px;
+	text-align: center;
+}
+.form-signin-heading ,.form-signin label
+{
+	color: black;
+}
+.form-signin-heading h2
+{
+	margin:0 auto;
+}
+.form-signin #inputEmail
+{
+	margin-bottom: 10px;
+}
+
+.btn-cadastro-login
+{
+	margin-top: 10px;
+}
+
+/*fim da estilização da pagina de login*/
+
+
+/*btn de calculo de rota*/
+.btn-rota
+{
+	margin-left: 50%;
+}
+
+
+/*caixa-carousel*/
+
+.caixa-carousel
+{
+	background: #ecf0f1;
+ 	position: absolute;
+ 	top:40%;
+	left:10%;
+	right: 10%;
+	z-index: 1000;
+	text-align: center;
+	border-radius: 15px ;
+	border: 1px;
+	 border-style:  solid;
+    border-color: #696969;
+    margin-bottom: 10%;
+}
+#carousel-especifico .carousel
+{
+ height: 60%;
+}
+#carousel-especifico .carousel .item ,#carousel-especifico .carousel .item img
+{
+ height: 100%;
+}
+
+/*estilização das estrelas na pagina de evento especifico*/
+div.stars {
+  width: 270px;
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+input.star-2:checked ~ label.star:before { color: #e67e22; }
+input.star-3:checked ~ label.star:before { color: #CDCD00; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}/*fim da estilização das estrelas*/
+
+/*modal da pagina do especifico*/
+.modal-especifico .modal
+{
+	z-index: 2500;
+}
+/*fim da estilização da modal*/
+
+/*modal automatica*/
+
+
+.modal-auto-botoes .modal-footer .btn + .btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+    margin-right: 15%;
+}
+.modal-auto h4
+{
+	text-align: center;
+	font-size: 30px;
+}
+.modal-auto .modal-dialog {
+    width: 600px;
+    margin: 200px auto;
+}
+/*fim da modal automatica*/
+
+/*formulario de cadastro de empresa*/
+.well-cadastro
+{
+	text-align: center;
+	background: #828282;
+	font-size: 25px;
+	color: white;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	margin-top: 50px;
+	height: 50px;
+    padding-top: 7px;
+}
+
+
+.cad-empresa .container h1 , .cad-usuario .container h1
+{
+	text-align: center;
+	margin-top: 5%;
+}
+#form-cad-empresa .botoes-cad , #form-cad-usuario .botoes-cad
+{
+	text-align: center;
+}
+#form-cad-empresa .botoes-cad button , #form-cad-usuario .botoes-cad button
+{
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#form-cad-empresa input[type="file"] , #form-cad-empresa input[type="text"] ,
+ #form-cad-empresa input[type="password"] ,#form-cad-empresa input[type="email"] ,
+ #form-cad-usuario input[type="file"] , #form-cad-usuario input[type="text"] ,
+ #form-cad-usuario input[type="password"] ,#form-cad-usuario input[type="email"] ,
+ #form-cad-usuario input[type="date"]
+{
+	width: 80%;
+}
+.corpo-form
+{
+	margin-left: 20%;
+}
