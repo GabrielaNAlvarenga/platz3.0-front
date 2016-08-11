@@ -17,6 +17,7 @@ html , body
 	position: fixed;
 	width: 100%;
 	z-index: 2000;
+        color: #fff;
 }
 .nav-inicial .navbar-brand{ 
 	background: url(../img/logo1.png) center / contain no-repeat;
@@ -33,6 +34,7 @@ html , body
 	padding-bottom: 15px;
 	color: #fff;
 	font-size: 15px;
+        cursor: pointer;
 }
 .nav-inicial .nav >li >.link
 {
@@ -421,3 +423,21 @@ label.star:before {
 {
 	margin-left: 20%;
 }
+/* imagem de perfil na nav do administrador */
+.img-perfil
+{
+    height: 150px;
+}
+.navbar-inverse .navbar-nav>li>.link {
+    color: #fff;
+}
+.link-perfil a
+{
+    cursor: pointer;
+}
+.link-perfil label p
+{
+    text-align: center;
+    color: black;
+}
+/* fim do css da nav do adm*/
