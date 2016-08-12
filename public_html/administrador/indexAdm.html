@@ -5,29 +5,185 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html ng-app="platz" >
-    <head>
-         <title>Platz - Suas rotas, Seus Eventos!</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="../lib/angular/angular.js"></script>
-        <link href="../lib/bootstrap.min.css" rel="stylesheet">
-        <link href="../lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
-        <script src="../lib/ie-emulation-modes-warning.js"></script>
+<head>
+    <title>Platz - Suas rotas, Seus Eventos!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../lib/angular/angular.js"></script>
+    <link href="../lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="../lib/ie-emulation-modes-warning.js"></script> 
 
-        <link rel="stylesheet" type="text/css" href="../css/estilo.css">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="../logo1.png">
-    </head>
-    <body>
-         <ng-include src="'../view/nav-adm.html'"></ng-include>
-         
-         
-         <script type="text/javascript">
-    angular.module("platz", []);
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/estiloAdm.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../logo1.png">
+</head>
+<body>
+    <ng-include src="'../view/nav-adm.html'"></ng-include>
+
+    <div class="espaco"></div>
+
+
+
+    <div class="container tabela-mensagem">
+        <h1>Mensagens</h1>
+        <div class="row">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Email</th>
+                    <th>Mensagem</th>
+                    <th>Assunto</th>
+                    <th>Marcar</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                <td>1</td>
+                <td>Gabrielaalvarenga@gmail.com</td>
+                <td>lalalalala ....</td>
+                <td>Denuncia</td>
+                <td>
+                    <span class="rating">
+                        <input type="checkbox" class="rating-input"
+                        id="rating-input-1-5" name="rating-input-1"/>
+                        <label for="rating-input-1-5" class="rating-star"></label>
+
+
+                    </span>
+                </td>
+                <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
+                    Ler Mensagem
+                </button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Gabrielaalvarenga@gmail.com</td>
+                <td>lalalalala ....</td>
+                <td>Denuncia</td>
+                <td>
+                  <input type="checkbox" value="">
+              </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Gabrielaalvarenga@gmail.com</td>
+            <td>lalalalala ....</td>
+            <td>Denuncia</td>
+            <td>
+                <input type="checkbox" value="">
+            </td>
+        </tr>  <tr>
+        <td>1</td>
+        <td>Gabrielaalvarenga@gmail.com</td>
+        <td>lalalalala ....</td>
+        <td>Denuncia</td>
+        <td>
+            <input type="checkbox" value="">
+        </td>
+    </tr>  <tr>
+    <td>1</td>
+    <td>Gabrielaalvarenga@gmail.com</td>
+    <td>lalalalala ....</td>
+    <td>Denuncia</td>
+    <td>
+        <input type="checkbox" value="">
+    </td>
+</tr>            
+</tbody>
+</table>   
+</div>
+<div class="col-md-12 text-center">
+  <ul class="pagination pagination-lg pager" id="myPager"></ul>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Mensagem - Platz <span class="rating">
+                 <input type="radio" class="rating-input"
+                 id="rating-input-1-4" name="rating-input-1"/>
+                 <label for="rating-input-1-4" class="rating-star"></label></h4>
+                 
+            </div>
+            <div class="modal-body">
+
+                <div class="container">
+                   <div class="container">
+                    <div class="col-md-5">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Data</th>
+                            <th>Assunto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Jose</td>
+                        <td>zezinha@email.com</td>
+                        <td>10/05/2016 as 00:15</td>
+                        <td>Denuncia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12"><div class="col-md-5">
+        
+         <label>Mensagem</label>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <label>Resposta</label>
+            <textarea id="mensagem" class="form-control input-contato" rows="6" required="mensagem" maxlength="500"  >quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</textarea>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    <button type="button" class="btn btn-primary">Enviar</button>
+</div>
+</div>
+
+</div> <!-- fim da div modal -->
+</div>
+
+
+<div class="footer-mensagem-adm"> 
+    <ng-include src="'../view/footer-adm.html'"></ng-include>
+</div>
+
+<script type="text/javascript">
+angular.module("platz", []);
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="../lib/bootstrap.min.js"></script>
-    </body>
+<script src="../js/tabela-responsiva.js"></script>
+
+</body>
 </html>

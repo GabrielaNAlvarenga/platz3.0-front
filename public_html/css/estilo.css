@@ -169,7 +169,7 @@ html , body
  	color: #87CEFF;
  }
 
-.footer-login , .footer-sobre , .footer-evento-especifico
+.footer-login , .footer-sobre , .footer-evento-especifico ,.footer-mensagem-adm
 {
 	position: fixed;
 	bottom: 0;
