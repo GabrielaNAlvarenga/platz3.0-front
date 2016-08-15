@@ -29,79 +29,106 @@ and open the template in the editor.
 
 
     <div class="container tabela-mensagem">
-        <h1>Mensagens</h1>
-        <div class="row">
-            <div class="table-responsive">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Email</th>
-                    <th>Mensagem</th>
-                    <th>Assunto</th>
-                    <th>Marcar</th>
-                </tr>
-            </thead>
-            <tbody id="myTable">
-              <tr>
-                <td>1</td>
-                <td>Gabrielaalvarenga@gmail.com</td>
-                <td>lalalalala ....</td>
-                <td>Denuncia</td>
-                <td>
-                    <span class="rating">
-                        <input type="checkbox" class="rating-input"
-                        id="rating-input-1-5" name="rating-input-1"/>
-                        <label for="rating-input-1-5" class="rating-star"></label>
+        <div class="container">
+
+            <div class="col-md-12">
+                <div class="panel with-nav-tabs panel-warning">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1warning" data-toggle="tab">Inicio</a></li>
+                            <li><a href="#tab2warning" data-toggle="tab">Favoritas</a></li>
+                            <li><a href="#tab3warning" data-toggle="tab">Lixeira</a></li>                            
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1warning">
+                               <h1>Mensagens</h1>
+                               <div class="row">
+                                <div class="table-responsive">
+                                  <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th>#</th>
+                                        <th>Email</th>
+                                        <th>Mensagem</th>
+                                        <th>Assunto</th>
+                                        <th>Marcar</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td>
+                                        <span class="rating">
+                                            <input type="checkbox" class="rating-input"
+                                            id="rating-input-1-5" name="rating-input-1"/>
+                                            <label for="rating-input-1-5" class="rating-star"></label>
 
 
-                    </span>
-                </td>
-                <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
-                    Ler Mensagem
-                </button></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Gabrielaalvarenga@gmail.com</td>
-                <td>lalalalala ....</td>
-                <td>Denuncia</td>
-                <td>
-                  <input type="checkbox" value="">
-              </td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Gabrielaalvarenga@gmail.com</td>
-            <td>lalalalala ....</td>
-            <td>Denuncia</td>
-            <td>
-                <input type="checkbox" value="">
-            </td>
-        </tr>  <tr>
-        <td>1</td>
-        <td>Gabrielaalvarenga@gmail.com</td>
-        <td>lalalalala ....</td>
-        <td>Denuncia</td>
-        <td>
-            <input type="checkbox" value="">
-        </td>
-    </tr>  <tr>
-    <td>1</td>
-    <td>Gabrielaalvarenga@gmail.com</td>
-    <td>lalalalala ....</td>
-    <td>Denuncia</td>
-    <td>
-        <input type="checkbox" value="">
-    </td>
-</tr>            
-</tbody>
-</table>   
+                                        </span>
+                                    </td>
+                                    <td> <a href="#" class="btn"><i class="icon-trash"></i> Botão lixeira</a> <hr/></td>
+                                    <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
+                                        Ler Mensagem
+                                    </button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td>
+                                      <input type="checkbox" value="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Gabrielaalvarenga@gmail.com</td>
+                                <td>lalalalala ....</td>
+                                <td>Denuncia</td>
+                                <td>
+                                    <input type="checkbox" value="">
+                                </td>
+                            </tr>  <tr>
+                            <td>1</td>
+                            <td>Gabrielaalvarenga@gmail.com</td>
+                            <td>lalalalala ....</td>
+                            <td>Denuncia</td>
+                            <td>
+                                <input type="checkbox" value="">
+                            </td>
+                        </tr>  <tr>
+                        <td>1</td>
+                        <td>Gabrielaalvarenga@gmail.com</td>
+                        <td>lalalalala ....</td>
+                        <td>Denuncia</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                    </tr>            
+                </tbody>
+            </table>   
+        </div>
+        <div class="col-md-12 text-center">
+          <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+  </div>
 </div>
-<div class="col-md-12 text-center">
-  <ul class="pagination pagination-lg pager" id="myPager"></ul>
+<div class="tab-pane fade" id="tab2warning">Warning 2</div>
+<div class="tab-pane fade" id="tab3warning">Warning 3</div>
+<div class="tab-pane fade" id="tab4warning">Warning 4</div>
+<div class="tab-pane fade" id="tab5warning">Warning 5</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+
+
 </div>
 
 <!-- Modal -->
@@ -113,15 +140,15 @@ and open the template in the editor.
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">Mensagem - Platz <span class="rating">
-                 <input type="radio" class="rating-input"
-                 id="rating-input-1-4" name="rating-input-1"/>
-                 <label for="rating-input-1-4" class="rating-star"></label></h4>
-                 
-            </div>
-            <div class="modal-body">
+                   <input type="radio" class="rating-input"
+                   id="rating-input-1-4" name="rating-input-1"/>
+                   <label for="rating-input-1-4" class="rating-star"></label></h4>
+
+               </div>
+               <div class="modal-body">
 
                 <div class="container">
-                   <div class="container">
+                 <div class="container">
                     <div class="col-md-5">
                       <table class="table">
                         <thead>
@@ -143,10 +170,10 @@ and open the template in the editor.
             </table>
         </div>
         <div class="col-md-12"><div class="col-md-5">
-        
-         <label>Mensagem</label>
 
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           <label>Mensagem</label>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -158,9 +185,9 @@ and open the template in the editor.
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</textarea>
             </div>
-            </div>
         </div>
     </div>
+</div>
 
 
 </div>
