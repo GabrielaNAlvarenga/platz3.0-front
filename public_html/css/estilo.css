@@ -18,9 +18,11 @@ html , body
 	width: 100%;
 	z-index: 2000;
         color: #fff;
+
 }
+
 .nav-inicial .navbar-brand{ 
-	background: url(../img/logo1.png) center / contain no-repeat;
+	background: url(../img/Logo.png) center / contain no-repeat;
 	width: 200px;
 	height: 80px;
 }
@@ -169,7 +171,8 @@ html , body
  	color: #87CEFF;
  }
 
-.footer-login , .footer-sobre , .footer-evento-especifico ,.footer-mensagem-adm
+.footer-login , .footer-sobre , .footer-evento-especifico ,.footer-mensagem-adm,
+.footer-evento-empresa
 {
 	position: fixed;
 	bottom: 0;

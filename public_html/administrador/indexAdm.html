@@ -19,7 +19,7 @@ and open the template in the editor.
     <link rel="stylesheet" type="text/css" href="../css/estiloAdm.css">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../logo1.png">
+    <link rel="icon" href="../Logo.png">
 </head>
 <body>
     <ng-include src="'../view/nav-adm.html'"></ng-include>
@@ -53,7 +53,9 @@ and open the template in the editor.
                                         <th>Email</th>
                                         <th>Mensagem</th>
                                         <th>Assunto</th>
-                                        <th>Marcar</th>
+                                        <th>Favoritar</th>
+                                        <th>Excluir</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody id="myTable">
@@ -68,10 +70,82 @@ and open the template in the editor.
                                             id="rating-input-1-5" name="rating-input-1"/>
                                             <label for="rating-input-1-5" class="rating-star"></label>
 
-
                                         </span>
                                     </td>
-                                    <td> <a href="#" class="btn"><i class="icon-trash"></i> Botão lixeira</a> <hr/></td>
+                                    <td> <a><span class="glyphicon glyphicon-trash"></span></a> </td>
+                                    <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
+                                        Ler Mensagem
+                                    </button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td>
+                                      <input type="checkbox" value="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Gabrielaalvarenga@gmail.com</td>
+                                <td>lalalalala ....</td>
+                                <td>Denuncia</td>
+                                <td>
+                                    <input type="checkbox" value="">
+                                </td>
+                            </tr>  <tr>
+                            <td>1</td>
+                            <td>Gabrielaalvarenga@gmail.com</td>
+                            <td>lalalalala ....</td>
+                            <td>Denuncia</td>
+                            <td>
+                                <input type="checkbox" value="">
+                            </td>
+                        </tr>  <tr>
+                        <td>1</td>
+                        <td>Gabrielaalvarenga@gmail.com</td>
+                        <td>lalalalala ....</td>
+                        <td>Denuncia</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                    </tr>            
+                </tbody>
+            </table>
+
+        </div><!-- fim da div table-responsive -->
+
+        <div class="col-md-12 text-center">
+          <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+
+  </div><!-- fim da div row -->
+
+</div><!-- fim da primeira tab -->
+
+<div class="tab-pane fade" id="tab2warning">
+    <h2>Mensagens Favoritas</h2>
+<div class="row">
+                                <div class="table-responsive">
+                                  <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th>#</th>
+                                        <th>Email</th>
+                                        <th>Mensagem</th>
+                                        <th>Assunto</th>
+                                        <th>Excluir</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable2">
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td> <a><span class="glyphicon glyphicon-trash"></span></a> </td>
                                     <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
                                         Ler Mensagem
                                     </button></td>
@@ -112,24 +186,95 @@ and open the template in the editor.
                     </tr>            
                 </tbody>
             </table>   
-        </div>
+        </div><!-- fim da div table-responsive -->
         <div class="col-md-12 text-center">
-          <ul class="pagination pagination-lg pager" id="myPager"></ul>
-      </div>
-  </div>
-</div>
-<div class="tab-pane fade" id="tab2warning">Warning 2</div>
-<div class="tab-pane fade" id="tab3warning">Warning 3</div>
-<div class="tab-pane fade" id="tab4warning">Warning 4</div>
-<div class="tab-pane fade" id="tab5warning">Warning 5</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+          <ul class="pagination pagination-lg pager" id="myPager2"></ul>
+        </div>
+
+  </div><!-- fim da div row -->
+
+</div><!-- fim da div com a tab 2 -->
+
+<div class="tab-pane fade" id="tab3warning">
+    <h2>Lixeira</h2>
+<div class="row">
+                                <div class="table-responsive">
+                                  <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th>#</th>
+                                        <th>Email</th>
+                                        <th>Mensagem</th>
+                                        <th>Assunto</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable3">
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td><button type="button" class="btn btn-warning btn-md" data-toggle="modal" data-target="#myModal">
+                                        Ler Mensagem
+                                    </button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Gabrielaalvarenga@gmail.com</td>
+                                    <td>lalalalala ....</td>
+                                    <td>Denuncia</td>
+                                    <td>
+                                      <input type="checkbox" value="">
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Gabrielaalvarenga@gmail.com</td>
+                                <td>lalalalala ....</td>
+                                <td>Denuncia</td>
+                                <td>
+                                    <input type="checkbox" value="">
+                                </td>
+                            </tr>  <tr>
+                            <td>1</td>
+                            <td>Gabrielaalvarenga@gmail.com</td>
+                            <td>lalalalala ....</td>
+                            <td>Denuncia</td>
+                            <td>
+                                <input type="checkbox" value="">
+                            </td>
+                        </tr>  <tr>
+                        <td>1</td>
+                        <td>Gabrielaalvarenga@gmail.com</td>
+                        <td>lalalalala ....</td>
+                        <td>Denuncia</td>
+                        <td>
+                            <input type="checkbox" value="">
+                        </td>
+                    </tr>            
+                </tbody>
+            </table>   
+        </div><!-- fim da div table-responsive -->
+        <div class="col-md-12 text-center">
+          <ul class="pagination pagination-lg pager" id="myPager3"></ul>
+        </div>
+
+  </div><!-- fim da div row -->
+</div><!-- fim da div com a tab 3 -->
 
 
-</div>
+</div><!-- fim tab content -->
+
+</div><!-- fim do painel body -->
+
+</div><!-- div com o painel -->
+
+</div><!-- fim da div col-md-12 -->
+
+</div><!-- fim da div container que abrage todos -->
+
+</div> <!-- fim da div com a tabela e as tabs -->
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -139,18 +284,15 @@ and open the template in the editor.
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Mensagem - Platz <span class="rating">
-                   <input type="radio" class="rating-input"
-                   id="rating-input-1-4" name="rating-input-1"/>
-                   <label for="rating-input-1-4" class="rating-star"></label></h4>
+                <h4 class="modal-title titulo-modal" id="myModalLabel">Mensagem - Platz</h4>
 
                </div>
                <div class="modal-body">
 
                 <div class="container">
-                 <div class="container">
+                 <div class="container corpo-modal-mensagem">
                     <div class="col-md-5">
-                      <table class="table">
+                      <table class="table table-hover">
                         <thead>
                           <tr>
                             <th>Nome</th>
@@ -169,7 +311,9 @@ and open the template in the editor.
                 </tbody>
             </table>
         </div>
-        <div class="col-md-12"><div class="col-md-5">
+
+        <div class="col-md-12">
+            <div class="col-md-5">
 
            <label>Mensagem</label>
 

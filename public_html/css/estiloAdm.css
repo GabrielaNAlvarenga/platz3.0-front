@@ -54,7 +54,7 @@ tirando a nav
     margin-top: 5%;
     padding: 30px;
 }
-.tabela-mensagem h1
+.tabela-mensagem h1 , .tabela-mensagem h2
 {
 text-align: center; 
 margin-bottom: 5%;  
@@ -91,4 +91,16 @@ margin-bottom: 5%;
     width: 16px;
     height: 16px;
     background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.titulo-modal
+{
+    text-align: center;
+}
+.favorito-modal
+{
+    margin-left: 90%;
+}
+.corpo-modal-mensagem
+{
+    width: 100%;
 }

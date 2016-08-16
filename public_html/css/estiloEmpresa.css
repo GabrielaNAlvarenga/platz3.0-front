@@ -1,0 +1,88 @@
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* Reposition the controls slightly */
+.carousel-control {
+    left: -12px;
+}
+.carousel-control.right {
+    right: -12px;
+}
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+    margin-bottom: -10px;
+}
+
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+}
+.carousel-indicators .active {
+background: #333333;
+}
+.carousel , .carousel .item
+{
+	height: 450px;
+	background: rgba(189, 195, 199,0.3);
+
+}
+.carousel .coluna-image
+{
+	padding-top: 10px;
+}
+.coluna-image h2 
+{
+	text-align: center;
+}
+ .coluna-image button
+ {
+ 	margin-left: 35%;
+ }
+ .imagem-ev-empresa
+ {
+	width: 270px;
+	height: 250px;
+	min-height: 250px;
+	min-width: 250px;
+	max-width: 300px;
+	max-height: 300px;
+	margin-left: 5%;
+}
+
+.rating {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+}
+.rating-input {
+    float: right;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    opacity: 0;
+}
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+.rating-star,
+.rating:hover .rating-star {
+    position: relative;
+    float: right;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
+}
+.alinhamento-estrela
+{
+	margin-left: 20%;
+}

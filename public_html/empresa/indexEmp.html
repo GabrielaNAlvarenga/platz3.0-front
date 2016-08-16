@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="platz" >
+<head>
+    <title>Platz - Suas rotas, Seus Eventos!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../lib/angular/angular.js"></script>
+    <link href="../lib/bootstrap.min.css" rel="stylesheet">
+    <link href="../lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="../lib/ie-emulation-modes-warning.js"></script> 
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> 
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?key=AIzaSyBdWHheIGYeuOEDTS4iYFI1lbIbq7-W7Hw"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../css/estiloEmpresa.css"> 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../Logo.png">
+</head>
+<body>
+    <ng-include src="'../view/nav-empresa.html'"></ng-include>
+
+    <div class="espaco"></div>
+    
+        <h1>Meus Eventos</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well"> 
+                    <div id="myCarousel" class="carousel slide">
+
+                        <ol class="carousel-indicators indicadores">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <div class="row-fluid">
+                                    <div class="col-md-3 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <div class="col-md-8 alinhamento-estrela">
+                                        <span class="rating">
+                                            <input type="radio" class="rating-input"
+                                            id="rating-input-1-5" name="rating-input-1"/>
+                                            <label for="rating-input-1-5" class="rating-star"></label>
+                                            <input type="radio" class="rating-input"
+                                            id="rating-input-1-4" name="rating-input-1"/>
+                                            <label for="rating-input-1-4" class="rating-star"></label>
+                                            <input type="radio" class="rating-input"
+                                            id="rating-input-1-3" name="rating-input-1"/>
+                                            <label for="rating-input-1-3" class="rating-star"></label>
+                                            <input type="radio" class="rating-input"
+                                            id="rating-input-1-2" name="rating-input-1"/>
+                                            <label for="rating-input-1-2" class="rating-star"></label>
+                                            <input type="radio" class="rating-input"
+                                            id="rating-input-1-1" name="rating-input-1"/>
+                                            <label for="rating-input-1-1" class="rating-star"></label>
+                                        </span>
+                                        </div>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-3 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-3 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-3 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                </div><!--/row-fluid-->
+                            </div><!--/item-->
+
+                            <div class="item">
+                                <div class="row-fluid">
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                </div><!--/row-fluid-->
+                            </div><!--/item-->
+
+                            <div class="item">
+                                <div class="row-fluid">
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                    <div class="col-md-4 coluna-image"><img src="../img/plano-fundo.jpg" alt="Image" class="img-circle  imagem-ev-empresa"/>
+                                        <h2>Nome</h2>
+                                        <button type="button" class="btn btn-warning">Detalhes</button>
+                                    </div>
+                                </div><!--/row-fluid-->
+                            </div><!--/item-->
+
+                        </div><!--/carousel-inner-->
+
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        </a>
+                    </div><!--/myCarousel-->
+
+                </div><!--/well-->   
+            </div>
+        </div>
+
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#myCarousel').carousel({
+            interval: 10000
+        })
+    });
+    </script>
+
+    <div class="footer-evento-empresa">
+    <ng-include src="'../view/footer-empresa.html'"></ng-include>
+    </div>
+
+    <script type="text/javascript">
+    angular.module("platz", []);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+
+
+</body>
+</html>
