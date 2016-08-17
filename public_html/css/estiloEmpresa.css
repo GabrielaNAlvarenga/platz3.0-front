@@ -3,11 +3,9 @@
     padding: 0 40px 30px 40px;
 }
 /* Reposition the controls slightly */
-.carousel-control {
-    left: -12px;
-}
-.carousel-control.right {
-    right: -12px;
+#myCarousel .carousel-control {
+    
+    width: 5%;
 }
 /* Changes the position of the indicators */
 .carousel-indicators {
@@ -19,16 +17,17 @@
 }
 
 /* Changes the colour of the indicators */
-.carousel-indicators li {
-    background: #c0c0c0;
+#myCarousel .carousel-indicators li {
+    background: #000;
+    border-color: #fff;
 }
-.carousel-indicators .active {
+#myCarousel .carousel-indicators .active {
 background: #333333;
 }
 .carousel , .carousel .item
 {
 	height: 450px;
-	background: rgba(189, 195, 199,0.3);
+	background: rgba(232, 232, 232,0.7);
 
 }
 .carousel .coluna-image
@@ -41,19 +40,30 @@ background: #333333;
 }
  .coluna-image button
  {
- 	margin-left: 35%;
+ 	margin-left: 43%;
  }
  .imagem-ev-empresa
  {
-	width: 270px;
-	height: 250px;
+	width: 200px;
+	height: 200px;
 	min-height: 250px;
 	min-width: 250px;
 	max-width: 300px;
 	max-height: 300px;
-	margin-left: 5%;
+	margin-left: 24%;
+    border-radius: 10px;
 }
-
+.imagem-ev-empresa-destaque
+{
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+}
+.ev-empresa-destaque
+{
+ text-align: center;
+ margin-bottom: 3%;
+}
 .rating {
     overflow: hidden;
     display: inline-block;
@@ -84,5 +94,18 @@ background: #333333;
 }
 .alinhamento-estrela
 {
-	margin-left: 20%;
+	margin-left: 35%;
+}
+#corpo-pagina .row 
+{
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+
+}
+#corpo-pagina h1
+{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
 }
