@@ -26,94 +26,216 @@ and open the template in the editor.
     <ng-include src="'../view/nav-empresa.html'"></ng-include>
 
     <div class="espaco"></div>
-    
+    <div class="pesquisa-evento-empresa" >
+
+        <h1>Meus Eventos</h1>
+        <form class="form-inline form-pesquisa">
+          <div class="form-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -- Selecione --<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+          </ul>
+      </div>
+      <div class="form-group">
+        <input id="nome-evento" type="text" class="form-control" maxlength="30" placeholder="Nome do Evento">
+    </div>
+    <button class="btn btn-primary" type="button">Pesquisar</button>
+</form><!-- /. form-inline form-pesquisa -->
+
+</div> <!-- /.pesquisa-evento-empresa  -->
+
 <input type='hidden' id='current_page' />  
 <input type='hidden' id='show_per_page' />  
-  
-<!-- Content div. The child elements will be used for paginating(they don't have to be all the same,  
-    you can use divs, paragraphs, spans, or whatever you like mixed together). '-->  
-<div id='content'>  
-    
- 
-            <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-             <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-     <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-     <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-   <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-             <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-     <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-     <div class="col-md-4">
-                <img class="img-circle" src="../img/plano-fundo.jpg" alt="Generic placeholder image" width="240" height="240">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
-            </div>
-    
-  	<p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala </p><p>lalala   	<img src="images/cold.jpg"></p>
-    <div><p>lalala teste </p>    <img src="images/cold.jpg"></div>
 
-</div>  
-  
-<!-- An empty div which will be populated using jQuery --> 
-<div class="col-md-12">
-<div id='page_navigation'></div> 
+<!--div content. Os elementos filho serão utilizados para paginar (eles não têm de ser todos iguais, você pode usar divs, parágrafos, vãos, ou o que quiser misturados). '-->  
+<div id='content'>  
+
+    <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+   <div class="col-md-3 evento-empresa">
+        <div class="hovereffect">
+            <img class=" img-responsive img-evento-efeito" src="../img/plano-fundo.jpg" alt="Imagem do Evento" >
+            <div class="overlay">
+               <h2>Nome do Evento</h2>
+               <h3>Nome da empresa</h3>
+               <a class="info" href="#">Ver Mais</a>
+           </div><!--  /. div overlay -->
+
+       </div><!-- /. div hovereffect  -->
+
+       <h2>Nome Evento</h2>
+       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+       <p><a class="btn btn-warning" href="#" role="button">Ver Detalhes &raquo;</a></p>
+   </div> <!-- /. div col-md-3 evento-empresa -->
+
+
+</div>  <!-- /. div content -->
+
+<!-- uma div vazia que sera preenchida usando jquery --> 
+<div class="col-md-12 paginator-itens">
+    <div id='page_navigation'></div> 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 
-   
 
-    <div class="footer-evento-empresa">
-        <ng-include src="'../view/footer-empresa.html'"></ng-include>
-    </div>
 
-    <script type="text/javascript">
-    angular.module("platz", []);
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../lib/bootstrap.min.js"></script>
-    <script src="../js/paginacao-empresa.js"></script>
+<div class="footer-evento-empresa">
+    <ng-include src="'../view/footer-empresa.html'"></ng-include>
+</div>
+
+<script type="text/javascript">
+angular.module("platz", []);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../lib/bootstrap.min.js"></script>
+<script src="../js/paginacao-empresa.js"></script>
 
 
 </body>
